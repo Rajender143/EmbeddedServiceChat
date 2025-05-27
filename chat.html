@@ -4,6 +4,7 @@
 <h1>User Verification 04282025</h1>
 	
 <body>
+	<iframe style="width: 100%;border:0px;" src=https://apd.myportal.hap.org/forms/s/scheduler?owner=20377844 id="Iframe"></iframe>
 	</body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -19,7 +20,19 @@
 
 	
 
-
+<script>
+           // Selecting the iframe element
+           var frame = document.getElementById("Iframe");
+          
+           // Adjusting the iframe height onload event
+           frame.onload = function() {
+               // set the height of the iframe as the height of the iframe content
+               frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+ 
+               // set the width of the iframe as the width of the iframe content
+               //frame.style.width  = frame.contentWindow.document.body.scrollWidth + 'px';
+           }
+       </script>
 
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
